@@ -27,6 +27,7 @@ h1 {
 }
 
 nav {
+    background-image: url("computer.jpeg");
     display: flex;
     background-color: #d8a47f;
     align-content: stretch;
