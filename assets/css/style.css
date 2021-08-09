@@ -3,12 +3,39 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif; 
     background-color:rgb(121, 121, 121)
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    background: cornflowerblue;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
 }
 
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    color:rgb(255, 255, 255)
-    
+    color:rgb(255, 255, 255) 
+}
+
+nav {
+    background-image: url("computer.jpeg");
+    display: flex;
+    background-color: #d8a47f;
+    align-content: stretch;
+}
+
+aside {
+    flex: 30%;
+    background-color: #666699;
+    padding: 20px;
+    flex-wrap: wrap;
 }
