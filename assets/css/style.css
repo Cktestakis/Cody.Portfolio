@@ -4,7 +4,24 @@
     padding: 0;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    background-color: rgb(42, 41, 80);
+}
+
+.nav-bar-ul {
+    color: rgb(65, 214, 225);
+    border-bottom: 3px solid cornflowerblue;
+    text-decoration: none;
+    list-style-type: none;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif; 
     background-color:rgba(248, 248, 248, 0.979);
     color:rgb(104, 0, 0)
@@ -51,12 +68,12 @@ nav a {
 }
 
 .background {
-    background-image: url("/assets/NightSky.jpg");
+    background-image: url("/assets/Background2.jpeg");
     background-color: #cccccc; 
-    height: 500px;
+    height: 278px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
 }
 
