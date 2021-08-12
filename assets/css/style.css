@@ -11,10 +11,8 @@ main {
 
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    font-size: 191%;
     width: 317px;
-    height: 38px;
+    height: 20px;
     margin-left: -40px;
     display: flex;
     flex-direction: row-reverse;
@@ -38,7 +36,7 @@ nav ul {
 }
 
 nav a {
-    color: rgba(125, 240, 234, 0.295);
+    color: rgba(0, 223, 211, 0.747);
     font-weight: bold;
     text-decoration:none;
 }
@@ -88,7 +86,6 @@ nav a {
 }
 
 .spacing-right {
-    text-align: right;
     display: block;
     padding-right: 15px;
     padding-bottom: 17px;
@@ -99,7 +96,13 @@ nav a {
 .big-content {
     background-image: url("/assets/imgs/sea-surf-wave.jpeg");
     background-repeat: no-repeat;
-    width: 0vh;
-    height:0vh;
+    width: 100vh;
+    height: 100vh;
+}
+
+.mid-content {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
 
 }
