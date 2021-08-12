@@ -1,9 +1,7 @@
 body {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-family: Arial, Helvetica, sans-serif; 
-    background-color:rgba(248, 248, 248, 0.979);
-    color:rgb(104, 0, 0)
 }
 
 main {
@@ -24,12 +22,19 @@ h1 {
     background-color: rgb(65, 214, 225);
 }
 
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #13293d;
+    color: #fff;
+  }
+
 nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
-    list-style: none;
-    padding: 1%;
 }
 
 nav a {
@@ -49,22 +54,23 @@ nav a {
 }
 
 .left-side {
-    margin: 50px;
-    padding: 50px;
-  
-    
+    margin: -11vh;
+    padding: 50vh;
+    margin-top: -50vh;
+    margin-right: -36vh;
 }
 
 .right-side {
-    margin: 50px;
-    padding: 50px;
-    text-align: right;
+    display: block;
+    margin-top: 50px;
+    text-align: left;
+    padding-right: 0vh;
+    padding-bottom: 0vh;
 }
-
 
 .part-of-page {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
@@ -74,6 +80,26 @@ nav a {
 
 .part-of-page > h2 {
     text-align: right;
+    display: block;
     padding-right: 15px;
+    padding-bottom: 17px;
     border-right: 3px solid red;
+    font-size: 49px;
+}
+
+.spacing-right {
+    text-align: right;
+    display: block;
+    padding-right: 15px;
+    padding-bottom: 17px;
+}
+
+/* Below will be the work */
+
+.big-content {
+    background-image: url("/assets/imgs/sea-surf-wave.jpeg");
+    background-repeat: no-repeat;
+    width: 0vh;
+    height:0vh;
+
 }
