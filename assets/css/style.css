@@ -11,11 +11,9 @@ main {
 
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    font-size: 191%;
-    width: 317px;
-    height: 38px;
-    margin-left: -40px;
+    width: 237px;
+    height: 24px;
+    margin-left: -25px;
     display: flex;
     flex-direction: row-reverse;
     color: rgb(42, 41, 80);
