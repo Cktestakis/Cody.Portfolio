@@ -20,6 +20,17 @@ h1 {
     background-color: rgb(65, 214, 225);
 }
 
+.something-cool {
+    width: 293px;
+    height: 28px;
+    margin-left: 1030px;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(42, 41, 80);
+    background-color: rgb(65, 214, 225);
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -52,8 +63,8 @@ nav a {
 }
 
 .left-side {
-    margin: -11vh;
-    padding: 50vh;
+    margin: -30vh;
+    padding: 48vh;
     margin-top: -50vh;
     margin-right: -36vh;
 }
