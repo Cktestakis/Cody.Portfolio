@@ -63,7 +63,7 @@ nav a {
 }
 
 .left-side {
-    margin: -30vh;
+    margin: -46vh;
     padding: 48vh;
     margin-top: -50vh;
     margin-right: -36vh;
@@ -178,5 +178,10 @@ p {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    
+}
+
+.content {
+font-size: 10px;
+background-color: dodgerblue;
+color: gold;
 }
