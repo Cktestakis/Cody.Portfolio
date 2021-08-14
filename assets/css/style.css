@@ -1,7 +1,9 @@
 body {
-    display: flex;
-    flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif; 
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    line-height: 1;
+    font-family: sans-serif;
 }
 
 main {
@@ -22,14 +24,13 @@ h1 {
 
 .something-cool {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 300px;
+    width: 237px;
     height: 24px;
-    margin-left: 1810px;
-    display: block;
+    margin-left: -25px;
+    display: flex;
     flex-direction: row-reverse;
     color: rgb(42, 41, 80);
     background-color: rgb(65, 214, 225);
-    font-size: 20px;
 }
 
 .main-header {
@@ -63,10 +64,10 @@ nav a {
 }
 
 .left-side {
-    margin: -46vh;
+    margin: -44vh;
     padding: 48vh;
     margin-top: -50vh;
-    margin-right: -36vh;
+    margin-right: -46vh;
 }
 
 .right-side {
@@ -118,6 +119,10 @@ p {
     background-size: cover;
     background-position: center;
     border: 5px solid cornflowerblue;
+}
+
+.big-content:hover {
+    transform: scale(1);
 }
 
 .mid-content {
@@ -181,7 +186,26 @@ p {
 }
 
 .content {
-font-size: 10px;
+font-size: 25px;
 background-color: dodgerblue;
 color: gold;
+}
+
+.media {
+    color: rgba(0, 223, 211, 0.747);
+    font-weight: bold;
+    text-decoration:none;
+    font-size: 35px;
+}
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
 }
