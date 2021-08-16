@@ -22,12 +22,17 @@ h1 {
     background-color: rgb(65, 214, 225);
 }
 
+.space-two {
+    position: relative;
+    width: 100%;
+}
+
 .something-cool {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 237px;
-    height: 24px;
-    margin-left: -25px;
-    display: flex;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 15%;
     flex-direction: row-reverse;
     color: rgb(42, 41, 80);
     background-color: rgb(65, 214, 225);
@@ -40,10 +45,12 @@ h1 {
     padding: 1%;
     background-color: #13293d;
     color: #fff;
-  }
+}
+
 
 nav ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     min-width: 300px;
 }
@@ -51,16 +58,13 @@ nav ul {
 nav a {
     color: rgba(0, 223, 211, 0.747);
     font-weight: bold;
-    text-decoration:none;
+    text-decoration: none;
 }
 
-.background {
-    background-image: url("/assets/another-space.jpg");
-    background-color: #cccccc; 
-    min-height: 30vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.space-two {
+    width: 100%;
+    height: 115px;
+    object-fit: cover;
 }
 
 .left-side {
@@ -70,15 +74,7 @@ nav a {
     margin-right: -46vh;
 }
 
-.right-side {
-    display: block;
-    margin-top: 24px;
-    text-align: left;
-    padding-right: 0vh;
-    padding-bottom: 0vh;
-    border: 5px solid cornflowerblue;
-    background-repeat: no-repeat;
-}
+
 
 p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -95,117 +91,128 @@ p {
     margin-top: 50px;
 }
 
-.part-of-page > h2 {
+.part-of-page>h2 {
     text-align: right;
     display: block;
     padding-right: 15px;
     padding-bottom: 17px;
     border-right: 3px solid red;
     font-size: 49px;
+    line-break: auto;
 }
 
 .spacing-right {
     padding-right: 15px;
     padding-bottom: 17px;
-    
 }
 
 /* Below is the image content*/
 
 .big-content {
-    width: 101%;
+    position: relative;
+    width: 100%;
     height: 350px;
-    background-image: url(/assets/space-pix.png);
     background-size: cover;
     background-position: center;
     border: 5px solid cornflowerblue;
 }
 
-.big-content:hover {
-    transform: scale(1);
+.space {
+    width: 100%;
+    height: 315px;
+    object-fit: cover;
 }
 
 .mid-content {
-    border: 5px solid var(--pale-blue);
-    border-radius: 2px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    float: left;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid cornflowerblue;
+}
+
+.mountains {
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.2s;
+    width: 217%;
+    object-fit: cover;
     margin: 1.5%;
     height: 200px;
-    flex: 1 1 45%;
-    min-width: 255px;
-    display: flex;
-    justify-content: left;
-    align-items: flex-end;
-    flex-wrap: wrap;
 }
 
-.project-one {
-    width: 50%;
-    height: 230px;
-    background-image: url("/assets/mountains.jpg");
-    background-size: cover;
-    background-position: bottom;
-    border: 5px solid cornflowerblue;
-    display: flex;
+.pyramids {
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+    width: 217%;
+    object-fit: cover;
+    margin: 1.5%;
+    height: 200px;
 }
 
-.project-two {
-    width: 50%;
-    height: 230px;
-    background-image: url("/assets/pyramids.jpg");
-    background-size: cover;
-    background-position: center;
-    border: 5px solid cornflowerblue;
-    display: flex;
+.meteor {
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+    width: 239%;
+    object-fit: cover;
+    margin: 1.5%;
+    height: 200px;
 }
 
-.project-three {
-    width: 50%;
-    height: 230px;
-    background-image: url("/assets/meteor-shower.jpg");
-    background-size: cover;
-    background-position: center;
-    border: 5px solid cornflowerblue;
-    display: flex;
-}
-
-.project-four {
-    width: 50%;
-    height: 230px;
-    background-image: url("/assets/colder-mountains.jpg");
-    background-size: cover;
-    background-position: bottom;
-    border: 5px solid cornflowerblue;
-    display: flex;
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
+.mountains-two {
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+    width: 217%;
+    object-fit: cover;
+    margin: 1.5%;
+    height: 200px;
 }
 
 .content {
-font-size: 25px;
-background-color: dodgerblue;
-color: gold;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 25%;
+    font-size: 21px;
+    background-color: dodgerblue;
+    background-blend-mode: lighten;
+    color: gold;
 }
 
 .media {
+    display: inline;
+    inline-size: 15%;
     color: rgba(0, 223, 211, 0.747);
     font-weight: bold;
-    text-decoration:none;
+    text-decoration: none;
     font-size: 35px;
+    padding: 10px;
+    word-spacing: 10px;
 }
 
 /* Media Queries: Tablet Landscape */
+
 @media screen and (max-width: 1060px) {
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
+    #primary {
+        width: 67%;
+    }
+    #secondary {
+        width: 30%;
+        margin-left: 3%;
+    }
 }
 
 /* Media Queries: Tabled Portrait */
+
 @media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
+    #primary {
+        width: 100%;
+    }
+    #secondary {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
 }
