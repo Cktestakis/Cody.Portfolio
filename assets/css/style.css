@@ -1,50 +1,119 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    --offwhite: #f5f5f5
+}
+
+/* Body Styling */
 body {
-    min-height: 100vh;
-    position: relative;
+    background-color:var(--offwhite);
+    color: rgb(2, 2, 2);
+    padding: 0;
     margin: 0;
-    line-height: 1;
-    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
+/* HERO IMAGE */
+#hero-image {
+    background: url(../smart-4168483_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 65%;
+    height: 500px;
+    position: relative;
+}
+/* NavBar */
+.bg-light {
+    background-color: transparent !important; 
+}
+
+#logo {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+ul {
+    margin-right: 20px;
+}
+
+li {
+    display: inline;
+    font-size: 27px;
+    color: var(--offwhite);
+    margin-left: 30px;
+}   
+
+a {
+    color: var(--offwhite);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--offwhite);
+    opacity: 60%;
+}
+
+/* Main Content Styling */
 main {
-    display: flex;
-    margin: 2%;
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0px;
 }
 
-h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 237px;
-    height: 24px;
-    margin-left: -25px;
-    display: flex;
-    flex-direction: row-reverse;
-    color: rgb(42, 41, 80);
-    background-color: rgb(65, 214, 225);
+#about-me {
+    font-size: 22px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
+#about-me a {
+    color: black;
+}
 
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
 
-/* Media Queries: Tablet Landscape */
+/* WELCOME TEXT STYLING */
+.fade-in-text {
+    font-size: 150px;
+    color: var(--offwhite);
+    overflow: hidden;
+    border-right: 0.15em solid var(--offwhite);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+}
 
-@media screen and (max-width: 1060px) {
-    #primary {
-        width: 67%;
+#welcome-hero {
+    animation: animated-text 2s steps(7, end) 0.5s 1 normal both, animated-cursor 600ms steps(7, end) infinite;
+    border-right: solid 3px var(--offwhite);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 95px;
+    color: var(--offwhite);
+    margin-top: 10%;
+}
+
+/* ANIMATION */
+
+@keyframes animated-text {
+    from {
+        width: 0;
     }
-    #secondary {
-        width: 30%;
-        margin-left: 3%;
+    to {
+        width: 472px;
     }
 }
 
-/* Media Queries: Tabled Portrait */
-
-@media screen and (max-width: 768px) {
-    #primary {
-        width: 100%;
+@keyframes animated-cursor {
+    from {
+        border-right-color: var(--offwhite);
     }
-    #secondary {
-        width: 100%;
-        margin: 0;
-        border: none;
+    to {
+        border-right-color: transparent;
     }
 }
