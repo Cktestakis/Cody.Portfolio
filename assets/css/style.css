@@ -117,3 +117,18 @@ main {
         border-right-color: transparent;
     }
 }
+
+/* ABOUT ME TEXT STYLING */
+.about-me-text {
+    grid-row: 1;
+    grid-column: 3 / 9;
+}
+
+/* WORK SECTION */
+
+.work-header {
+    padding-top: 6%;
+    font-size: 36px;
+    color: black;
+    text-align: center;
+}
