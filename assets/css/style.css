@@ -98,6 +98,19 @@ main {
     margin-top: 10%;
 }
 
+/* PROJECT IMAGE SIZES */
+.calm {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.inner {
+    display: inline-block;
+    width: 100%;
+    line-height: 80px;
+}
+
 /* ANIMATION */
 
 @keyframes animated-text {
