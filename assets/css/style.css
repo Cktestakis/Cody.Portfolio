@@ -228,6 +228,17 @@ main {
     }
 }
 
+/* FOOTER */
+.portfolio .footer {
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    padding: 40px 100px 40px 100px;
+}
+
+.contact {
+    text-align: center;
+}
+
 
 /* ANIMATION */
 
