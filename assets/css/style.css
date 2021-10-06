@@ -99,17 +99,135 @@ main {
 }
 
 /* PROJECT IMAGE SIZES */
-.calm {
-    max-width: 100%;
-    max-height: 100vh;
-    margin: auto;
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
-.inner {
-    display: inline-block;
+.carousel {
     width: 100%;
-    line-height: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    max-height: 350px;
+    overflow: hidden;
+    position: relative;
 }
+
+.carousel .item {
+    width: 100%;
+    height: flex;
+    display: flex;
+    background-color: cornflowerblue;
+    position: absolute;
+    visibility: hidden;
+    transition: 0.6s visibility linear;
+}
+
+.carousel .item .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0.4;
+    padding: 25px;
+    text-align: justify;
+    letter-spacing: 1.5;
+    font-size: 14px;
+}
+
+.carousel .item .content h1 {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s all ease-in;
+}
+
+.carousel .item .content p {
+    transform: translateY(25%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s all ease-in;
+}
+
+.carousel .item .img {
+    flex: 0.6;
+    transform: translateY(100%);
+}
+
+.carousel .item .img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* BUTTONS */
+.buttons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: darkgrey;
+    margin: 10px;
+    z-index: 2;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.buttons .prev {
+    border-right: 1px solid cornflowerblue;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.buttons .next {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.buttons .prev:active {
+    background: darkblue;
+}
+.buttons .next:active {
+    background: darkblue;
+}
+
+.carousel .item.active {
+    z-index: 1;
+    display: flex;
+    visibility: visible;
+}
+
+.carousel .item.active .img {
+    transition: 0.6s all ease-in-out;
+    transform: translateX(0);
+}
+
+.carousel .item.item.active .content h1 {
+    opacity: 1;
+    transition: 0.6s all ease-in-out;
+    visibility: visible;
+}
+
+.carousel .item.active .content p {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.6s all ease-in-out;
+    visibility: visible;
+}
+
+@media only screen and (max-width: 768px){
+    .carousel{
+        max-height: 80%;
+    }
+    .carousel .item{
+        flex-direction: column;
+    }
+}
+
 
 /* ANIMATION */
 
