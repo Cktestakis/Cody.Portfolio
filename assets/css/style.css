@@ -202,10 +202,10 @@ p {
 /* Links
 ********************************************************************* */
 a {
-	color: #1EAEDB;
+	color: #5c8ffd;
 }
 a:hover {
-	color: #0FA0CE;
+	color: #5c8ffd;
 }
 /* Header Section
 ********************************************************************* */
@@ -496,10 +496,10 @@ opacity: 0;
 .progressBarValue {
 	height: 8px;
 	float: left;
-	background: #e55d87; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+	background: #666699; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #666699 0%, #003366 100%);
+	background: -webkit-linear-gradient(-45deg, #666699 0%, #003366 100%);
+	background: linear-gradient(135deg, #666699 0%, #003366 100%);
 }
 .value-00 {
 	width: 0;
@@ -733,11 +733,11 @@ input[type="submit"]:hover {
 footer {
 	min-height: 120px;
 	padding: 40px 0 40px 0;
-	background: #e55d87;
-	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
+	background: #666699;
+	background: -moz-linear-gradient(-45deg, #666699 0%, #5fc3e4 100%);
+	background: -webkit-linear-gradient(-45deg, #666699 0%, #5fc3e4 100%);
+	background: linear-gradient(135deg, #666699 0%, #5fc3e4 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666699', endColorstr='#5fc3e4', GradientType=1 );
 	box-sizing: border-box;
 }
 footer p {
@@ -808,16 +808,16 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 
 .icon {
 	padding-right: 10px;
-	color: #e55d87;
+	color: #666699;
 	/* font-size: 30px; */
 }
 .block {
 	width: 70px;
 	height: 2px;
-	background: #e55d87; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+	background: #666699; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #666699 0%, #003366 100%);
+	background: -webkit-linear-gradient(-45deg, #666699 0%, #003366 100%);
+	background: linear-gradient(135deg, #666699 0%, #003366 100%);
 	margin-bottom: 50px;
 }
 
@@ -903,8 +903,8 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
   }
 
   .offset {
-	--color: #e55d87;
-	--hover: #1973bc;
+	--color: #666699;
+	--hover: #003366;
 	cursor: pointer;
   }
 
