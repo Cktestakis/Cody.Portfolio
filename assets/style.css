@@ -1,14 +1,14 @@
 .project {
-  background-color: #37393a;
+  background-color: #003049;
   color: #8e8d8a;
 }
 .card-body {
-  background-color: #0059be;
+  background-color: #d62828;
   color: #8e8d8a;
 }
 
 .navbar {
-  background-color: #0059be;
+  background-color: #d62828;
   color: #8e8d8a;
 }
 .img-center {
@@ -147,7 +147,7 @@ h3 {
 }
 
 .card {
-  background-color: #eae7dc;
+  background-color: #d62828;
 }
 .contact-links a {
   color: #e85a4f;
